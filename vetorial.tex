@@ -1,0 +1,83 @@
+\documentclass{article}
+ \usepackage[brazil]{babel}
+ \usepackage[utf8]{inputenc}
+ \usepackage{amsmath}
+ \usepackage{amssymb}
+ \usepackage{amsthm}
+ \usepackage{exercise}
+ \def\ExerciseListName{Ex.}%
+ \def\ExerciseName{Ex.}%
+ \usepackage{multicol}
+\usepackage[left=3.5cm,top=3.0cm,right=4.0cm]{geometry}
+
+
+\title{Vetores, Sistemas de Equações e Espaços Vetoriais}
+\author{Mali}
+
+\begin{document}
+\maketitle
+
+
+\begin{enumerate}
+
+		\item Para cada sistema de equações abaixo,
+		\begin{itemize}
+			\item classifique o sistema em homogêneo ou não homogêneo
+			\item escreva a equação matricial correspondente
+			\item classifique a matriz em LI ou LD
+			\item classifique a solução (solução única, solução indeterminada ou sem solução)
+			\item se a solução for única, apresente a solução
+			\item se a solução for indeterminada, apresente uma forma geral da solução
+			\item usando o R, calcule o determinante da matriz
+		\end{itemize}
+		(obs.: faça os ítens na ordem que preferir)
+		\begin{enumerate}
+			\item (exemplo) \begin{align}
+				2x + y &= 3\\
+				x -y &= 5
+			\end{align}
+(solução) 
+		\begin{itemize}
+		\item não-homogêneo
+		\item forma matricial: \[ \left( \begin{array}{ccc}
+			2 & 1 \\
+			1 & -1 \end{array} \right)\left( \begin{array}{ccc} x\\y \end{array} \right) 
+			= \left( \begin{array}{ccc} 3\\5 \end{array} \right)\] 
+		\item LI
+		\item Solução única
+		\item $x = 8/3$, $y=-7/3$
+		\item determinante $-2-1=-3$
+		\end{itemize}
+		\begin{multicols}{2}
+			\item \begin{align}
+				2x + 2y &= 0\\
+				x -y &= 0
+			\end{align}
+			\item \begin{align}
+				2x + 2y + 2z &= 0\\
+				x -y + z &= 0\\
+				x -3z &=0
+			\end{align}
+			\item \begin{align}
+				2x + 2y + 2z &= 0\\
+				x -y + z &= 5\\
+				x +5y +z &=0
+			\end{align}
+			\item \begin{align}
+				x -y &= 0\\
+				x +y -z &= 0\\
+				x&=5
+			\end{align}
+			\item \begin{align}
+				2x + 2y &= 0\\
+				x -y &= 0
+			\end{align}
+			\item \begin{align}
+				2x + 2y &= 0\\
+				x -y &= 0
+			\end{align}
+		\end{multicols}
+		\end{enumerate}
+
+\end{enumerate}
+	\end{document}

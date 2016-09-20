@@ -1,0 +1,115 @@
+\documentclass{article}
+ \usepackage[brazil]{babel}
+ \usepackage[utf8]{inputenc}
+ \usepackage{amsmath}
+ \usepackage{amssymb}
+ \usepackage{amsthm}
+ \usepackage{exercise}
+ \def\ExerciseListName{Ex.}%
+ \def\ExerciseName{Ex.}%
+ \usepackage{multicol}
+\usepackage[left=3.5cm,top=3.0cm,right=4.0cm]{geometry}
+
+
+\title{Logaritmos e Potências}
+\author{Mali}
+
+\begin{document}
+\maketitle
+
+Definição: logaritmo de um número é a potência à qual preciso elevar a base para chegar a esse
+número. Então se $log_b(n) = p$, isso significa que $b^p = n$.
+
+\begin{enumerate}
+
+	\item Calcule as potências e os logaritmos:
+		\begin{enumerate}
+		\begin{multicols}{2}
+			\item $2^1=$
+			\item $2^2=$
+			\item $2^3=$
+			\item $2^4=$
+			\item $log_2(2)=$
+			\item $log_2(4)=$
+			\item $log_2(8)=$
+			\item $log_2(16)=$
+		\end{multicols}
+		\end{enumerate}
+	
+		Lembre-se que potência com expoente negativo é o inverso da potência com expoente
+		positivo, isto é: $b^{-n} = 1/b^n$.
+	\item Calcule as potências e os logaritmos:
+		\begin{enumerate}
+		\begin{multicols}{3}
+		\item $3^{-1}=$
+		\item $4^{-2}=$
+		\item $10^{-3}=$
+		\item $5^{-3}=$
+			\item $log_3(1/3)=$
+			\item $log_4(1/16)=$
+			\item $log_{10}(1/1000)=$
+			\item $log_5(1/125)=$
+			\item $log_3(1/9)=$
+			\item $log_4(1/4)=$
+			\item $log_{10}(0,001)=$
+			\item $log_5(1/525)=$
+		\end{multicols}
+		\end{enumerate}
+	
+		Quando multiplicamos potências com a mesma base, podemos somar os expoentes
+		($b^nb^m=b^{m+n}$). O correspondente dessa regra em logaritmos é que a soma de
+		logaritmos (expoentes) equivale a uma multiplicação.	
+	\item Calcule as potências e os logaritmos:
+		\begin{enumerate}
+		\begin{multicols}{2}
+		\item $2^32^2=$
+		\item $4^{-2}4^2=$
+		\item $10^{-3}10^{-1}=$
+		\item $5^{3}5^{-2}=$
+		\item $e^{1}e^{-2}=$
+		\item $2^5=$
+		\item $4^0=$
+		\item $10^{-4}=$
+		\item $5^{1}=$
+		\item $e^{-1}=$
+		\item $log_2(8)+log_2(4)=$
+		\item $log_4(1/16)+log_4(16)=$
+		\item $log_{10}(0,001)+log_10(0,1)=$
+		\item $log_5(125)+log_5(1/25)=$
+		\item $ln(e)+ln(1/e^2)=$
+		\item $log_2(8x4)=$
+		\item $log_4(16/16)=$
+		\item $log_{10}(0,0001)=$
+		\item $log_5(5)=$
+		\item $ln(1/e)=$
+		\end{multicols}
+		\end{enumerate}
+	
+		O logaritmo é uma operação inversa à exponenciação, no sentido de que $log_b(b^x)=x$
+		e $b^{log_b(x)}=x$. Em particular, $x=e^{ln(x)}$.
+	\item Coloque as fórmulas a seguir na forma $e^{ax+b}$:
+		\begin{enumerate}
+		\begin{multicols}{2}
+		\item $2=e^{ln(2)}$
+		\item $2^x=$
+		\item $3e^x=$
+		\item $4e^{2x}=$
+		\item $2\pi2^x=$
+		\item $3^x2^x=$
+		\end{multicols}
+		\end{enumerate}
+	
+	\item Imagine um conjunto de dados com uma distribuição com a forma $y_i =
+		e^{2x_i+1+\epsilon_i}$ onde $epsilon \sim N(0,2)$ é um erro normalmente distribuído - ou seja,
+		em escala logarítmica, o erro é normal e a variância não depende de $x$.
+		\begin{enumerate}
+			\item Suponha que $x_1=1$ e que o erro $\epsilon_1$ vale 2. Quanto vale
+				$y_1$? Qual a diferença entre o $y$ esperado para esse $x_1$ e o
+				$y_1$ encontrado com esse erro? (obs.: use calculadora)
+			\item Suponha agora que $x_2=3$ e que o erro $\epsilon_2$ também vale 2. Quanto vale
+				$y_2$? Qual a diferença entre o $y$ esperado para esse $x_2$ e o
+				$y_2$ encontrado com esse erro?
+		\end{enumerate}
+
+\end{enumerate}
+	\end{document}

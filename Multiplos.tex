@@ -1,0 +1,128 @@
+\documentclass{article}
+ \usepackage[brazil]{babel}
+ \usepackage[utf8]{inputenc}
+ \usepackage{amsmath}
+ \usepackage{amssymb}
+ \usepackage{amsthm}
+ \usepackage{exercise}
+ \def\ExerciseListName{Ex.}%
+ \def\ExerciseName{Ex.}%
+ \usepackage{multicol}
+\usepackage[left=3.5cm,top=2.5cm,right=3.5cm]{geometry}
+
+
+\title{Lista 1: Os Naturais: Múltiplos e Divisores}
+\author{Mali - Álgebra}
+
+\begin{document}
+\maketitle
+
+Dizemos que um natural p é múltiplo de um natural q se existe uma multiplicação de q que resulta em p, ou seja,
+existe um natural n tal que $nq = p$. Podemos também dizer que q é divisor de p, porque $p/q = n$ e n é natural.
+Em notação abreviada: Dados $q \in \mathbb{N}$, $p \in \mathbb{N}$, dizemos que $q|p \iff \exists n : p = nq$.
+
+Note que só faz sentido falar de múltiplos e divisores com números inteiros, já que para p ser múltiplo de q, o resultado
+de q/p tem que ser um número inteiro. Saber lidar com múltiplos e divisores é fundamental para conseguir simplificar
+contas difíceis.
+
+\begin{enumerate}
+	\item \label{um} Como vimos aula passada, todo número par que é múltiplo de 3 também é múltiplo de 6. 
+	Usando alguns dos divisores de um número, podemos descobrir outros!
+	Complete as frases, descobrindo sempre pelo menos um novo divisor em comum:
+		\begin{enumerate}
+		\item Todo número par que é múltiplo de 5 também é múltiplo de 
+		\item Todo número que é múltiplo de 3 e de 4 é múltiplo de
+		\item Todo número que é múltiplo de 2, de 3 e de 5 é múltiplo de
+		\end{enumerate}
+	\item Qual é a regra geral que podemos observar no exercício anterior?
+	\item Preste atenção ao completar as próximas frases:
+		\begin{enumerate}
+		\item Todo número que é múltiplo de 4 e de 6 é múltiplo de
+		\item Todo número que é múltiplo de 6 e de 10 é múltiplo de
+		\item Todo número que é múltiplo de 100 e de 30 é múltiplo de
+		\end{enumerate}
+	\item Qual a diferença entre essas frases e as do exercício \ref{um}?
+
+	Esses exercícios consistem em encontrar múltiplos comuns entre números. É daí que surge o conceito de
+	Mínimo Múltiplo Comum. O MMC entre a e b é o menor número que é múltiplo, tanto de a, quanto de b.
+	Em notação matemática, definimos o conjunto de múltiplos de um natural $a$ como $a\mathbb{N} = 
+	\{x \in \mathbb{N} : a | x \}$, ent]ao definimos o mmc assim: $mmc\{a,b\} = \min a\mathbb{N}\cup b\mathbb{N}$.
+
+	\item Qual é a regra geral que podemos observar nos exercícios anteriores? Escreva deste jeito: dados dois
+	naturais p e q, todo número múltiplo de p e de q também é...
+
+	\item Encontre todos os divisores dos números abaixo. Depois, dê sua fatoração em potências de primos.
+		\begin{enumerate}
+		\begin{multicols}{2}
+			\item exemplo: 20\\ divisores: 1, 2, 4, 5, 10 e 20 \\ fatoração: $2^2$x5
+		\item 64
+		\item 120
+		\item 714
+		\item 153
+		\end{multicols}
+		\end{enumerate}
+
+	\item Depois de fazer o exercício anterior, escolha três pares de números (por exemplo, os pares 64 e 120, 153 e 714,
+		120 e 153) e encontre, para cada par, todos os divisores comuns, o Maior Divisor Comum (mdc) e o Menor Divisor
+		Comum (mmc).
+		
+	\item Explique como encontrar o mmc e o mdc entre dois números usando a fatoração em potências de primos.
+
+	\item Mostre que (isto é, explique porquê), 
+		dados naturais a, b e c, com b > c, se $a|b$ e $a|c$, então $a|b+c$ e $a|b-c$ (ou seja, o divisor
+		comum entre dois números também é divisor da soma e da subtração desses números). Além disso, perceba que
+		$a$ também é divisor de todos os múltiplos de b e c.
+
+	\item Na notação decimal, se um número é escrito usando os algarismos $abcd$ (por exemplo, para 1988, $a = 1$, $b=9$
+		$c = 8$ e $d=8$) então $abcd = 1000a + 100b + 10c + d$. Usando isso, demonstre que se a soma dos algarismos
+		é um múltiplo de 9, então $abcd$ é múltiplo de 9. Obs:  mesma propriedade vale para o 9 e para o 3. 
+		Será que essa propriedade vale para outros números?
+
+	\item Dizemos que dois números são {\bf primos entre si} se eles não têm nenhum divisor comum entre si fora o 1.
+		Mostre que (explique porquê) dois números consecutivos sempre são primos entre si.
+
+	\item Qual o mdc entre números primos entre si? E o mmc?
+
+	\item Tome dois números naturais $a$ e $b$ e divida eles por seu máximo divisor comum $d$. O que podemos dizer sobre
+		os números resultantes, $a/d$ e $b/d$? Qual o mdc entre eles? E o mmc? Por quê? O que isso significa?
+
+	\item Desafio: você consegue escrever a generalização do exercício acima? Isto é, dados $n$ números naturais
+		divididos pelo seu mdc $d$...
+
+	\item Um número é {\bf primo} se ele só é divisível por 1 e por si mesmo. Dado um primo $p$ e um número $n$,
+		se eles não forem primos entre si, então qual a relação entre eles?
+
+	\item Desenvolva (ou aprenda) um método pra encontrar números primos. Encontre os primeiros 20 primos. Explique
+		como você os encontrou.
+
+	\item Encontre o mdc e o mmc entre os seguintes conjuntos de números:
+		\begin{enumerate}
+		\begin{multicols}{3}
+			\item 125, 55
+			\item 192, 3351, 504
+			\item 28, 68
+			\item 24, 128
+			\item 63, 112, 56
+			\item 60, 72
+		\end{multicols}
+		\end{enumerate}
+
+	\item Some as frações:
+		\begin{enumerate}
+		\begin{multicols}{3}
+			\item $\frac{3}{5} + \frac{1}{10} + \frac{2}{6}$
+			\item $1 + \frac{5}{4}$
+			\item $\frac{5}{9} + \frac{1}{21}$
+			\item $\frac{2}{3} + 3$
+			\item $5 + \frac{3}{2}$
+			\item $\frac{1}{10} + \frac{10}{2}$
+			\item $\frac{2}{4} - \frac{4}{2}$
+			\item $\frac{4}{34} + \frac{7}{170}$
+			\item $\frac{3}{16} + \frac{1}{18}$
+			\item $\frac{1}{12} + \frac{9}{11} + \frac{5}{15}$
+			\item $\frac{15}{14} + \frac{13}{28} - \frac{7}{8}$
+		\end{multicols}
+		\end{enumerate}
+
+\end{enumerate}
+	\end{document}
