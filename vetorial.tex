@@ -24,18 +24,17 @@
 		\begin{itemize}
 			\item classifique o sistema em homogêneo ou não homogêneo
 			\item escreva a equação matricial correspondente
-			\item classifique a matriz em LI ou LD
+			\item classifique as linhas da matriz em LI ou LD
 			\item classifique a solução (solução única, solução indeterminada ou sem solução)
 			\item se a solução for única, apresente a solução
 			\item se a solução for indeterminada, apresente uma forma geral da solução
-			\item usando o R, calcule o determinante da matriz
+			\item calcule o determinante da matriz
 		\end{itemize}
 		(obs.: faça os ítens na ordem que preferir)
-		\begin{enumerate}
-			\item (exemplo) \begin{align}
+			\item (exemplo) \begin{align*}
 				2x + y &= 3\\
 				x -y &= 5
-			\end{align}
+			\end{align*}
 (solução) 
 		\begin{itemize}
 		\item não-homogêneo
@@ -48,36 +47,155 @@
 		\item $x = 8/3$, $y=-7/3$
 		\item determinante $-2-1=-3$
 		\end{itemize}
+		\begin{enumerate}
 		\begin{multicols}{2}
-			\item \begin{align}
+			\item \begin{align*}
 				2x + 2y &= 0\\
 				x -y &= 0
-			\end{align}
-			\item \begin{align}
+			\end{align*}
+			\item \begin{align*}
 				2x + 2y + 2z &= 0\\
 				x -y + z &= 0\\
 				x -3z &=0
-			\end{align}
-			\item \begin{align}
+			\end{align*}
+			\item \begin{align*}
 				2x + 2y + 2z &= 0\\
 				x -y + z &= 5\\
 				x +5y +z &=0
-			\end{align}
-			\item \begin{align}
+			\end{align*}
+			\item \begin{align*}
 				x -y &= 0\\
 				x +y -z &= 0\\
 				x&=5
-			\end{align}
-			\item \begin{align}
-				2x + 2y &= 0\\
-				x -y &= 0
-			\end{align}
-			\item \begin{align}
-				2x + 2y &= 0\\
-				x -y &= 0
-			\end{align}
+			\end{align*}
+			\item \begin{align*}
+				x + 3y &= 5\\
+				x -y &= 2\\
+				5x+y/2&=10
+			\end{align*}
+			\item \begin{align*}
+				2y +z&= 0\\
+				x -y -z&= 0
+			\end{align*}
 		\end{multicols}
 		\end{enumerate}
+	
+	\item Nos casos abaixo, a equação está na forma matricial. Escreva o sistema de equações
+		correspondente, e então faça os mesmos passos que no exercício anterior.
+		\begin{enumerate}
+		\begin{multicols}{2}
+		\item \[ \left( \begin{array}{ccc}
+			1 & 1 \\
+			1 & -1 \end{array} \right)\left( \begin{array}{ccc} x\\y \end{array} \right) 
+			= \left( \begin{array}{ccc} 1\\2 \end{array} \right)\]
+		\item \[ \left( \begin{array}{ccc}
+				1 & 1\\
+			1 & 0 \end{array} \right)\left( \begin{array}{ccc} x\\y \end{array} \right) 
+			= \left( \begin{array}{ccc} 0\\0 \end{array} \right)\]
+		\item \[ \left( \begin{array}{ccc}
+				1 & 1 & 0\\
+			1 & 0 & 1\end{array} \right)\left( \begin{array}{ccc} x\\y\\z \end{array} \right) 
+			= \left( \begin{array}{ccc} 0\\0\\2 \end{array} \right)\]
+		\item \[ \left( \begin{array}{ccc}
+				1 & 1 & 0\\
+				1 & 2 & 0\\
+			1 & 0 & 0 \end{array} \right)\left( \begin{array}{ccc} x\\y\\z \end{array} \right) 
+			= \left( \begin{array}{ccc} 2\\5\\4 \end{array} \right)\]
+		\item \[ \left( \begin{array}{ccc}
+				2 & 1 & 2\\
+				1 & 2 & 1\\
+			0 & 0 & 0 \end{array} \right)\left( \begin{array}{ccc} x\\y\\z \end{array} \right) 
+			= \left( \begin{array}{ccc} 0\\0\\0 \end{array} \right)\]
+		\item \[ \left( \begin{array}{ccc}
+				1 & 1 & 1\\
+				1 & 2 & 2\\
+			1 & 0 & 3 \end{array} \right)\left( \begin{array}{ccc} x\\y\\z \end{array} \right) 
+			= \left( \begin{array}{ccc} 2\\1\\1 \end{array} \right)\]
+		\end{multicols}
+		\end{enumerate}
+	
+	\item Quais dos seguintes conjuntos são bases do espaço $\mathbb{R}^3$? Tente desenhar o
+		espaço gerado por esses conjuntos.
+		\begin{enumerate}
+		\begin{multicols}{2}
+		\item \[ \left\{ \left( \begin{array}{ccc} 1\\2\\3 \end{array} \right) , 
+				\left( \begin{array}{ccc} 2\\0\\5 \end{array} \right) \right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} 1\\2\\3 \end{array} \right) , 
+				\left( \begin{array}{ccc} 2\\2\\3 \end{array} \right) , 
+					\left( \begin{array}{ccc} 2\\0\\5 \end{array} \right)
+						\right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} 1\\2\\3 \end{array} \right) , 
+				\left( \begin{array}{ccc} 2\\2\\3 \end{array} \right) , 
+				\left( \begin{array}{ccc} 4\\5\\6 \end{array} \right) , 
+					\left( \begin{array}{ccc} 2\\0\\5 \end{array}
+						\right)\right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} 0\\0\\0 \end{array} \right) , 
+				\left( \begin{array}{ccc} 2\\5\\6 \end{array} \right) , 
+					\left( \begin{array}{ccc} 4\\2\\4 \end{array} \right) \right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} 1\\2\\3 \end{array} \right) , 
+				\left( \begin{array}{ccc} 2\\4\\6 \end{array} \right) , 
+					\left( \begin{array}{ccc} 2\\10\\15 \end{array} \right) \right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} 1\\2\\-3 \end{array} \right) , 
+				\left( \begin{array}{ccc} 2\\4\\6 \end{array} \right) , 
+					\left( \begin{array}{ccc} 2\\-3\\5 \end{array} \right) \right\}\]
+		\end{multicols}
+		\end{enumerate}
+	
+	\item Para as seguintes bases do espaço $\mathbb{R}^2$, escreva as matrizes de mudança de
+		base para a base canônica e vice-versa.
+		\begin{enumerate}
+		\begin{multicols}{2}
+		\item \[ \left\{ \left( \begin{array}{ccc} 1\\2 \end{array} \right) , 
+				\left( \begin{array}{ccc} 2\\0 \end{array} \right) \right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} 1\\1 \end{array} \right) , 
+				\left( \begin{array}{ccc} 1\\0 \end{array} \right) \right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} 1\\1 \end{array} \right) , 
+				\left( \begin{array}{ccc} 1\\-1 \end{array} \right) \right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} 0\\1 \end{array} \right) , 
+				\left( \begin{array}{ccc} 1\\0 \end{array} \right) \right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} 3\\-1 \end{array} \right) , 
+				\left( \begin{array}{ccc} 1\\-2 \end{array} \right) \right\}\]
+		\item \[ \left\{ \left( \begin{array}{ccc} -1\\-1 \end{array} \right) , 
+				\left( \begin{array}{ccc} -1\\-2 \end{array} \right) \right\}\]
+		\end{multicols}
+		\end{enumerate}
+	
+	\item Vamos verificar o efeito da multiplicação de algumas matrizes por uma matriz genérica, 
+		\[M = \left( \begin{array}{ccc} a & b & c\\d & e & f\\g & h & i \end{array}
+			\right)\]. Calcule os produtos:
+		\begin{enumerate}
+		\begin{multicols}{2}
+		\item \[M\left( \begin{array}{ccc} 2 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1 \end{array} \right)\]
+		\item \[\left( \begin{array}{ccc} 2 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1 \end{array} \right)M\]
+		\item \[M\left( \begin{array}{ccc} 1 & 0 & 0\\0 & 3 & 0\\0 & 0 & 1 \end{array} \right)\]
+		\item \[\left( \begin{array}{ccc} 1 & 0 & 0\\0 & 3 & 0\\0 & 0 & 1 \end{array} \right)M\]
+		\item \[M\left( \begin{array}{ccc} 2 & 0 & 0\\0 & 3 & 0\\0 & 0 & 1 \end{array} \right)\]
+		\item \[\left( \begin{array}{ccc} 2 & 0 & 0\\0 & 3 & 0\\0 & 0 & 1 \end{array} \right)M\]
+		\item \[M\left( \begin{array}{ccc} 0 & 1 & 0\\1 & 0 & 0\\0 & 0 & 1 \end{array} \right)\]
+		\item \[\left( \begin{array}{ccc} 0 & 1 & 0\\1 & 0 & 0\\0 & 0 & 1 \end{array}
+				\right)M\]
+		\item \[M\left( \begin{array}{ccc} 0 & 0 & 1\\1 & 0 & 0\\0 & 1 & 0 \end{array} \right)\]
+		\item \[\left( \begin{array}{ccc} 0 & 0 & 1\\1 & 0 & 0\\0 & 1 & 0 \end{array} \right)M\]
+		\item \[M\left( \begin{array}{ccc} 1 & 0 & 0\\1 & 1 & 0\\0 & 0 & 1 \end{array} \right)\]
+		\item \[\left( \begin{array}{ccc} 1 & 0 & 0\\1 & 1 & 0\\0 & 0 & 1 \end{array} \right)M\]
+		\item \[M\left( \begin{array}{ccc} 1 & 0 & 0\\0 & 1 & 0\\0 & 1 & 1 \end{array} \right)\]
+		\item \[\left( \begin{array}{ccc} 1 & 0 & 0\\0 & 1 & 0\\0 & 1 & 1 \end{array} \right)M\]
+		\item \[M\left( \begin{array}{ccc} 1 & 0 & 0\\0 & 1 & 0\\0 & -1 & 1 \end{array} \right)\]
+		\item \[\left( \begin{array}{ccc} 1 & 0 & 0\\0 & 1 & 0\\0 & -1 & 1 \end{array} \right)M\]
+		\item \[M\left( \begin{array}{ccc} 1 & 0 & 0\\1 & 1 & 0\\1 & 1 & 1 \end{array} \right)\]
+		\item \[\left( \begin{array}{ccc} 1 & 0 & 0\\1 & 1 & 0\\1 & 1 & 1 \end{array} \right)M\]
+		\end{multicols}
+		\end{enumerate}
+
+	\item Como você descreveria os efeitos das multiplicações acima sobre a matriz M? Usando
+		essa intuição, tente encontrar as inversas dessas matrizes. Lembre que se
+		$AM=N$, então $A^{-1}N=M$, ou seja, a matriz inversa desfaz a transformação
+		original.
+
+	\item Mostre que o produto de duas matrizes inversíveis é uma matriz inversível.
+	
+			
+
 
 \end{enumerate}
 	\end{document}
